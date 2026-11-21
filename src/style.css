@@ -1,0 +1,9 @@
+.btn {
+  background: #fb4;
+  color: #222;
+  cursor: pointer;
+  &:hover{
+    
+    background: #fb2;
+  }
+}
