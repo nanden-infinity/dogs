@@ -1,5 +1,12 @@
-.footer {
-  background: teal;
+.footer,
+.foot {
   padding: 3rem;
   color: azure;
+}
+.footer {
+  background: teal;
+}
+
+.foot {
+  background: #222;
 }

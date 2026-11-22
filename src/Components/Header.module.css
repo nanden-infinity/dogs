@@ -37,3 +37,9 @@
   top: -3px;
   
 }
+
+.container{
+  padding: 4rem 8rem;
+  max-width: 678px;
+  margin: 0 auto;
+}

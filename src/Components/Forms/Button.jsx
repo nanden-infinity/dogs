@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './Button.module.css';
-export const Button = ({ children, ...props }) => {
-
+export const Button = ({ children,disabled, ...props }) => {
   return (
-    <button  className={styles.button}>
+    <button disabled={disabled}   className={styles.button}>
       {children}
     </button>
   );
