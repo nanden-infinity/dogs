@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Input.module.css';
-export const Input = ({ label, type, name, onChange,onBlur, error }) => {
+export const Input = ({ label, type, name, value, onChange, onBlur, error }) => {
   return (
     <div className={style.wrapper}>
       <label className={style.label} htmlFor={name}>
@@ -10,6 +10,7 @@ export const Input = ({ label, type, name, onChange,onBlur, error }) => {
         id={name}
         className={style.input}
         name={name}
+        value={value}
         onChange={onChange}
         onBlur={onBlur}
         type={type}
