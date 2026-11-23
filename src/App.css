@@ -8,10 +8,10 @@ body {
   color: #333;
   margin-top: 4rem;
   --type-first: Helveetica, Arial, sans-serif;
-  ---roboto: 'Roboto', var(--type-first);
-  ---poppins: 'Poppins', var(--type-first);
+  --font-text: 'Roboto', var(--type-first);
+  --font-title-default: 'Poppins', var(--type-first);
+  --font-title: 'Spectral', var(--type-first);
   font-family: var(--type-first);
-
 }
 h1,
 h2,
@@ -43,9 +43,9 @@ button {
   max-width: 50rem;
   padding: 0 1rem;
   margin: 0 auto;
-  &.p-4{
+  &.p-4 {
     padding: 4rem 0;
-    & h1{
+    & h1 {
       color: tomato;
       font-size: 2rem;
       font-family: var(---poppins);
@@ -57,4 +57,52 @@ button {
 button {
   cursor: pointer;
   border: 0;
+}
+
+/* TITLE H1 */
+[data-title] {
+  position: relative;
+  display: flex;
+  gap: 4rem;
+  /* margin-left: .8rem; */
+  align-items: center;
+  font-family: var(--font-title);
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  line-height: 1;
+  font-size: 3rem;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    margin-left: -8px;
+    border-radius: 2px;
+    display: inline-block;
+    height: 1.5rem;
+    z-index: -1;
+    width: 1.8rem;
+    background: #fb4;
+  }
+}
+/* Error Container */
+.error-container .error {
+  font-family: var(--font-title);
+  font-style: italic;
+  line-height: 1.1;
+  color: #e51;
+  margin-block: .6rem;
+}
+/* Animation */
+
+.animeLeft {
+  opacity: 0;
+  transform: translate3d(-22px, 0, 0);
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
 }
