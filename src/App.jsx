@@ -7,6 +7,8 @@ import { Home } from './Components/Home';
 import { Footer } from './Components/Footer';
 import { Login } from './Components/Login/Login';
 import { UserContext, UserStorage } from './UserContext';
+import { User } from './Components/User/User';
+import { ProtectRouter } from './Components/Helper/ProtectRouter';
 const App = () => {
   const [username, Setusername] = React.useState('');
   // const userperfil = React.useContext(UserContext);
@@ -18,7 +20,10 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/login/*" element={<Login />} />
+            <Route path="login/*" element={<Login />} />
+            <Route path="conta/*" element={<ProtectRouter>
+              {<User/>}
+            </ProtectRouter>} />
           </Routes>
           <Footer />
         </UserStorage>

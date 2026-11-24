@@ -17,7 +17,7 @@ export const Header = () => {
         {data ? (
           <Link to="/login" className={styles.login}>
             {data.nome}
-            <button className='btn' onClick={userLogout}>LogOut</button>
+            <button className={styles.btn} onClick={userLogout}>LogOut</button>
           </Link>
         ) : (
           <Link to="/login" className={styles.login}>

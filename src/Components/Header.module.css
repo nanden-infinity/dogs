@@ -35,11 +35,14 @@
   margin-left: 0.5rem;
   position: relative;
   top: -3px;
-  
 }
 
-.container{
+.container {
   padding: 4rem 8rem;
   max-width: 678px;
   margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  padding: .4rem .5rem;
 }
