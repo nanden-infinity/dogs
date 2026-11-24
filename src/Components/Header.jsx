@@ -15,7 +15,7 @@ export const Header = () => {
           <Dogs />
         </Link>
         {data ? (
-          <Link to="/conta" className={styles.login}>
+          <Link to="/login" className={styles.login}>
             {data.nome}
             <button className='btn' onClick={userLogout}>LogOut</button>
           </Link>

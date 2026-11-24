@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Input.module.css';
 export const Input = ({ label, type, name, value, onChange, onBlur, error }) => {
+  console.log(value)
   return (
     <div className={style.wrapper}>
       <label className={style.label} htmlFor={name}>
@@ -14,6 +15,8 @@ export const Input = ({ label, type, name, value, onChange, onBlur, error }) => 
         onChange={onChange}
         onBlur={onBlur}
         type={type}
+        placeholder={name}
+        autoComplete=''
       />
       {error && <p className={style.error}>{error}</p>}
     </div>

@@ -9,7 +9,13 @@ import { UserContext } from '../../UserContext';
 import styles from './Login.module.css';
 export const Login = () => {
   const { login } = React.useContext(UserContext);
-  if (login) return <Navigate to="/minha" />;
+  if (login)
+    return (
+      <>
+        <Navigate to="/minha" />
+        <MinhaConta />
+      </>
+    );
   return (
     <section className={styles.login}>
       <div className={styles.forms}>
