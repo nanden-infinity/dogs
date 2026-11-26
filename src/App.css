@@ -3,14 +3,15 @@
   text-decoration: none;
 }
 body {
-  background: 0px;
-  margin-inline: 0;
-  color: #333;
-  margin-top: 4rem;
   --type-first: Helveetica, Arial, sans-serif;
   --font-text: 'Roboto', var(--type-first);
   --font-title-default: 'Poppins', var(--type-first);
   --font-title: 'Spectral', var(--type-first);
+  --black-default: #333;
+  background: 0px;
+  margin-inline: 0;
+  margin-top: 4rem;
+  color: var(--black-default);
   font-family: var(--type-first);
 }
 h1,
@@ -90,7 +91,7 @@ button {
   font-style: italic;
   line-height: 1.1;
   color: #e51;
-  margin-block: .6rem;
+  margin-block: 0.6rem;
 }
 /* Animation */
 
